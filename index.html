@@ -1,0 +1,837 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Direkt agenti 1 soatda — AI SMM Academy</title>
+<meta property="og:title" content="Direkt agenti 1 soatda — AI SMM Akademiya">
+<meta property="og:image" content="og.png">
+<meta name="description" content="Direkt'ga o'zi javob beradigan AI agent — 1 soatda, $15. / Агент для директа за 1 час, $15. / An AI agent for your DMs in 1 hour, $15.">
+<!-- META PIXEL: Facebook Ads Manager > Events Manager'dan Pixel ID olinadi.
+     Saytni o'z domeningizga qo'ygach, quyidagi izohni ochib, YOUR_PIXEL_ID o'rniga raqamni yozing.
+<script>
+!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,document,'script','https://connect.facebook.net/en_US/fbevents.js');
+fbq('init','YOUR_PIXEL_ID');fbq('track','PageView');
+document.addEventListener('click',function(e){var a=e.target.closest('a[href*="t.me/"]');if(a&&window.fbq){fbq('track','InitiateCheckout',{content_name:a.getAttribute('data-plan')||'tarif'});}});
+</script>
+-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Unbounded:wght@600;800&family=Manrope:wght@400;600;700&display=swap">
+<style>
+:root{
+  --bg:#0E0B14; --bg2:#16111F; --card:#1C1627; --line:#2E2540;
+  --text:#F4EFFA; --muted:#B9AFCB; --orange:#F08A3C; --cyan:#5EE6DF; --purple:#8E5BD6; --gold:#F5C04A;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--text);font-family:Manrope,system-ui,sans-serif;font-size:17px;line-height:1.55;-webkit-font-smoothing:antialiased;padding-bottom:88px}
+a{color:inherit}
+.wrap{max-width:1120px;margin:0 auto;padding:0 20px}
+h1,h2,h3{font-family:Unbounded,system-ui,sans-serif;line-height:1.08;margin:0;letter-spacing:-.01em}
+.eyebrow{display:flex;align-items:center;gap:12px;font-size:13px;letter-spacing:.22em;text-transform:uppercase;color:var(--muted)}
+.eyebrow::before{content:"";width:40px;height:2px;background:var(--orange)}
+.accent{color:var(--orange)}
+.cyan{color:var(--cyan)}
+
+/* header */
+header{position:sticky;top:0;z-index:20;background:rgba(14,11,20,.88);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+header .wrap{display:flex;align-items:center;justify-content:space-between;height:64px}
+.logo{display:flex;align-items:center;gap:10px;font-family:Unbounded,sans-serif;font-weight:600;font-size:15px;text-decoration:none}
+.logo i{width:10px;height:10px;border-radius:50%;background:var(--orange);box-shadow:0 0 14px var(--orange)}
+.nav{display:flex;gap:22px;font-size:15px;color:var(--muted)}
+.nav a{text-decoration:none}
+.nav a:hover{color:var(--text)}
+@media(max-width:760px){.nav{display:none}}
+
+/* buttons */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:12px;min-height:56px;padding:0 10px 0 28px;border-radius:999px;background:var(--orange);color:#1A0F06;font-weight:700;font-size:17px;text-decoration:none;letter-spacing:.02em;text-transform:uppercase;transition:transform .15s}
+.btn:hover{transform:translateY(-2px)}
+.btn .arr{width:40px;height:40px;border-radius:50%;background:#FFF6EC;display:grid;place-items:center}
+.btn.ghost{background:transparent;color:var(--text);border:1.5px solid var(--line);padding:0 24px}
+
+/* hero */
+.hero{position:relative;overflow:hidden;padding:56px 0 72px;background:radial-gradient(800px 500px at 85% 20%,rgba(142,91,214,.28),transparent 60%),radial-gradient(600px 400px at 0% 100%,rgba(240,138,60,.16),transparent 60%)}
+.hero-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:40px;align-items:center}
+@media(max-width:860px){.hero-grid{grid-template-columns:1fr}}
+.hero h1{font-size:clamp(40px,7.4vw,84px);font-weight:800;margin:22px 0 22px;text-transform:uppercase}
+.hero p.lead{font-size:20px;color:var(--muted);max-width:560px;margin:0 0 26px}
+.checks{list-style:none;padding:0;margin:0 0 30px;display:flex;flex-direction:column;gap:12px}
+.checks li{display:flex;gap:12px;align-items:flex-start;font-size:18px}
+.checks svg{flex:none;margin-top:2px}
+.price{display:flex;align-items:flex-end;gap:16px;margin-bottom:24px}
+.price b{font-family:Unbounded,sans-serif;font-size:72px;line-height:.9;font-weight:800}
+.price span{color:var(--muted);font-size:15px;padding-bottom:6px}
+.bitbox{position:relative;display:flex;justify-content:center}
+.bitbox svg{width:100%;max-width:420px;height:auto;animation:float 4s ease-in-out infinite}
+@keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-14px)}}
+@media (prefers-reduced-motion:reduce){.bitbox svg{animation:none}}
+.bubble{position:absolute;top:6%;left:0;background:var(--card);border:1px solid var(--line);border-radius:18px 18px 18px 4px;padding:12px 16px;font-size:15px;max-width:220px}
+
+/* sections */
+section{padding:80px 0;border-top:1px solid var(--line)}
+section h2{font-size:clamp(30px,5vw,52px);text-transform:uppercase;margin:16px 0 18px}
+section .sub{color:var(--muted);font-size:19px;max-width:680px;margin:0 0 40px}
+
+.guides{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:18px}
+.g{background:var(--card);border:1px solid var(--line);border-radius:24px;padding:26px;display:flex;flex-direction:column;gap:12px}
+.g .n{font-family:Unbounded,sans-serif;font-size:40px;font-weight:800;color:var(--orange);line-height:1}
+.g h3{font-size:20px}
+.g p{margin:0;color:var(--muted);font-size:16px}
+
+.cases{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:18px}
+.case{background:var(--card);border:1px solid var(--line);border-radius:28px;padding:28px;display:flex;flex-direction:column;gap:14px}
+.tag{align-self:flex-start;border:1.5px solid rgba(240,138,60,.55);color:var(--orange);border-radius:999px;padding:6px 16px;font-size:12px;letter-spacing:.18em;text-transform:uppercase;font-weight:700}
+.case h3{font-size:22px;text-transform:uppercase}
+.lbl{font-size:12px;letter-spacing:.2em;text-transform:uppercase;color:var(--muted)}
+.was{color:#9C92AE;text-decoration:line-through;text-decoration-color:var(--orange);margin:0}
+.now{margin:0}
+.now b{color:var(--orange)}
+
+.tariffs{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px;align-items:stretch}
+@media(max-width:900px){.tariffs{grid-template-columns:1fr}}
+.t{background:var(--card);border:1px solid var(--line);border-radius:28px;padding:30px;display:flex;flex-direction:column;gap:18px}
+.t.hot{border:2px solid var(--orange);background:linear-gradient(180deg,#24182A,var(--card))}
+.t .badge{align-self:flex-start;background:var(--orange);color:#1A0F06;font-weight:700;font-size:12px;letter-spacing:.14em;text-transform:uppercase;border-radius:999px;padding:6px 14px}
+.t h3{font-size:24px;text-transform:uppercase}
+.t .p{font-family:Unbounded,sans-serif;font-size:52px;font-weight:800;line-height:1}
+.t .p small{font-family:Manrope,sans-serif;font-size:15px;color:var(--muted);font-weight:600}
+.t ul{list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:10px;flex:1}
+.t li{display:flex;gap:10px;font-size:16px}
+.t li::before{content:"";flex:none;width:8px;height:8px;border-radius:50%;background:var(--cyan);margin-top:9px}
+.t .btn{width:100%;padding:0 24px}
+.t .btn.ghost{color:var(--text)}
+
+.steps{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:18px;counter-reset:s}
+@media(max-width:860px){.steps{grid-template-columns:1fr 1fr}}
+@media(max-width:520px){.steps{grid-template-columns:1fr}}
+.step{background:var(--card);border:1px solid var(--line);border-radius:24px;padding:24px}
+.step::before{counter-increment:s;content:"0" counter(s);display:block;font-family:Unbounded,sans-serif;font-weight:800;font-size:28px;color:var(--cyan);margin-bottom:10px}
+.step p{margin:0;color:var(--muted);font-size:16px}
+.step b{color:var(--text);display:block;margin-bottom:6px;font-size:18px}
+
+.faq{display:flex;flex-direction:column;gap:12px;max-width:820px}
+details{background:var(--card);border:1px solid var(--line);border-radius:20px;padding:20px 24px}
+summary{cursor:pointer;font-weight:700;font-size:18px;list-style:none;display:flex;justify-content:space-between;gap:16px}
+summary::after{content:"+";color:var(--orange);font-size:24px;line-height:1}
+details[open] summary::after{content:"–"}
+details p{color:var(--muted);margin:12px 0 0}
+
+.author{display:grid;grid-template-columns:auto 1fr;gap:28px;align-items:center;background:var(--card);border:1px solid var(--line);border-radius:32px;padding:32px}
+@media(max-width:640px){.author{grid-template-columns:1fr}}
+.author svg{width:140px;height:auto}
+
+footer{padding:40px 0;color:var(--muted);font-size:15px;border-top:1px solid var(--line)}
+footer .wrap{display:flex;flex-wrap:wrap;gap:12px 28px;justify-content:space-between}
+
+/* sticky bar */
+.bar{position:fixed;left:0;right:0;bottom:0;z-index:30;background:rgba(14,11,20,.94);backdrop-filter:blur(10px);border-top:1px solid var(--line)}
+.bar .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;height:80px}
+.bar b{font-size:20px;display:block}
+.bar span{color:var(--muted);font-size:14px}
+.bar .btn{min-height:52px;padding:0 26px;font-size:15px}
+
+.langs{display:flex;gap:4px;border:1px solid var(--line);border-radius:999px;padding:4px}
+.langs a{min-width:44px;min-height:36px;display:grid;place-items:center;border-radius:999px;font-weight:700;font-size:14px;text-decoration:none;color:var(--muted);padding:0 10px}
+.langs a[aria-current="true"]{background:var(--orange);color:#1A0F06}
+.quote{font-family:Unbounded,sans-serif;font-size:clamp(20px,2.6vw,26px);line-height:1.3;margin:0}
+.h2s{font-size:clamp(24px,3.6vw,34px)!important}
+.lang[hidden]{display:none}
+.bitchat{position:fixed;right:16px;bottom:96px;z-index:40;display:flex;flex-direction:column;align-items:flex-end;gap:10px;max-width:calc(100vw - 32px)}
+.bitchat .panel{width:340px;max-width:100%;background:var(--bg2);border:1px solid var(--line);border-radius:24px;box-shadow:0 20px 60px rgba(0,0,0,.5);overflow:hidden;display:flex;flex-direction:column}
+.bitchat .panel[hidden]{display:none}
+.bitchat .top{display:flex;align-items:center;justify-content:space-between;padding:8px 8px 8px 16px;border-bottom:1px solid var(--line);font-weight:700}
+.bitchat .top span{display:flex;align-items:center;gap:8px}
+.bitchat .top i{width:8px;height:8px;border-radius:50%;background:#3BD16F}
+.bitchat .x{background:none;border:0;color:var(--muted);font-size:24px;min-width:44px;min-height:44px;cursor:pointer}
+.bitchat .log{padding:14px;display:flex;flex-direction:column;gap:10px;max-height:46vh;overflow:auto}
+.bitchat .m{background:var(--card);border:1px solid var(--line);border-radius:18px 18px 18px 4px;padding:10px 14px;font-size:15px;line-height:1.45;align-self:flex-start;max-width:92%}
+.bitchat .m.me{background:var(--purple);border-color:var(--purple);border-radius:18px 18px 4px 18px;align-self:flex-end;color:#fff}
+.bitchat .opts{display:flex;flex-wrap:wrap;gap:8px;padding:0 14px 14px}
+.bitchat .opts button,.bitchat .opts a{min-height:44px;border-radius:999px;border:1.5px solid var(--line);background:transparent;color:var(--text);padding:0 14px;font:600 14px Manrope,sans-serif;cursor:pointer;text-decoration:none;display:inline-flex;align-items:center}
+.bitchat .opts a{background:var(--orange);border-color:var(--orange);color:#1A0F06}
+.bitchat .fab{width:68px;height:68px;border-radius:50%;border:2px solid var(--cyan);background:var(--bg2);padding:6px;cursor:pointer;box-shadow:0 0 24px rgba(94,230,223,.35)}
+.bitchat .fab svg{width:100%;height:100%}
+.typing{opacity:.6;font-style:italic}
+
+</style>
+</head>
+<body>
+<div class="lang" data-lang="uz" lang="uz" hidden>
+
+
+<header>
+  <div class="wrap">
+    <a class="logo" href="#top"><i></i>AI SMM <span class="accent">Akademiya</span></a>
+    <nav class="nav" aria-label="Bo'limlar">
+      <a href="#nima">Agent nima qiladi</a>
+      <a href="#dastur">Dastur</a>
+      <a href="#ishlar">Ishlar</a>
+      <a href="#savollar">Savollar</a>
+    </nav>
+    <div class="langs" role="group" aria-label="Til / Язык / Language"><a href="#uz" aria-current="true">UZ</a><a href="#ru" aria-current="false">RU</a><a href="#en" aria-current="false">EN</a></div>
+  </div>
+</header>
+
+<main id="uz-top">
+<div class="hero">
+  <div class="wrap hero-grid">
+    <div>
+      <div class="eyebrow">Gayd + 4 video · ChatPlace + Claude</div>
+      <h1>Direktga <span class="accent">o'zi javob</span> beradigan agent</h1>
+      <p class="lead">Instagram Direct'ga kechayu kunduz javob beradigan AI agentni 1 soatda ishga tushirasiz. Agentning "miyasini" Claude yozadi, ChatPlace esa uni Instagram'ga ulaydi.</p>
+      <ul class="checks">
+        <li><svg width="26" height="26" viewBox="0 0 26 26" aria-hidden="true"><circle cx="13" cy="13" r="13" fill="#F08A3C"/><path d="M7.5 13.5l3.5 3.5 7.5-8" fill="none" stroke="#1A0F06" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg>1 soatda — ishlaydigan Direkt agenti</li>
+        <li><svg width="26" height="26" viewBox="0 0 26 26" aria-hidden="true"><circle cx="13" cy="13" r="13" fill="#F08A3C"/><path d="M7.5 13.5l3.5 3.5 7.5-8" fill="none" stroke="#1A0F06" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg>Dasturlash shart emas — tayyor prompt va shablonlar</li>
+        <li><svg width="26" height="26" viewBox="0 0 26 26" aria-hidden="true"><circle cx="13" cy="13" r="13" fill="#F08A3C"/><path d="M7.5 13.5l3.5 3.5 7.5-8" fill="none" stroke="#1A0F06" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg>To'lovdan keyin gayd va videolar Telegram botda ochiladi</li>
+      </ul>
+      <div class="price"><b>$15</b><span>bir martalik to'lov</span></div>
+      <a class="btn" href="https://t.me/aismm_akademiya_bot?start=agent15" data-plan="agent15">Agent yasash — $15 <span class="arr" aria-hidden="true"><svg width="18" height="18" viewBox="0 0 18 18"><path d="M3 9h11M10 4l5 5-5 5" fill="none" stroke="#1A0F06" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg></span></a>
+    </div>
+    <div class="bitbox">
+      <div class="bubble">Salom! Men <b class="cyan">Bit</b> — ana shunday agentman. Sizga ham yasab beraylikmi?</div>
+      <svg viewBox="40 10 340 420" role="img" aria-label="Bit — atlas sharfli uchar robot, akademiya boshlovchisi">
+        <defs>
+          <linearGradient id="bbuz" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#FFFFFF"/><stop offset="1" stop-color="#C9DFE3"/></linearGradient>
+          <radialGradient id="btuz" cx="50%" cy="30%" r="60%"><stop offset="0" stop-color="#5EE6DF" stop-opacity=".85"/><stop offset="1" stop-color="#5EE6DF" stop-opacity="0"/></radialGradient>
+          <radialGradient id="bouz" cx="50%" cy="50%" r="50%"><stop offset="0" stop-color="#F08A3C" stop-opacity=".7"/><stop offset="1" stop-color="#F08A3C" stop-opacity="0"/></radialGradient>
+        </defs>
+        <ellipse cx="200" cy="404" rx="86" ry="34" fill="url(#btuz)"/>
+        <path d="M184 372 Q200 424 216 372 Z" fill="#5EE6DF" opacity=".85"/>
+        <ellipse cx="200" cy="368" rx="36" ry="11" fill="#2FA8A6"/>
+        <circle cx="200" cy="34" r="24" fill="url(#bouz)"/>
+        <line x1="200" y1="72" x2="200" y2="40" stroke="#8FB3B8" stroke-width="6" stroke-linecap="round"/>
+        <circle cx="200" cy="34" r="10" fill="#F08A3C"/>
+        <path d="M134 252 C110 230 92 206 82 184" fill="none" stroke="#D7E8EA" stroke-width="22" stroke-linecap="round"/>
+        <circle cx="80" cy="174" r="17" fill="#FFFFFF" stroke="#C9DFE3" stroke-width="3"/>
+        <rect x="130" y="222" width="140" height="132" rx="52" fill="url(#bbuz)"/>
+        <circle cx="200" cy="294" r="22" fill="#0F1E2A"/>
+        <path d="M203 280 L192 298 L201 298 L197 310 L209 291 L200 291 Z" fill="#5EE6DF"/>
+        <path d="M266 258 C286 274 302 290 312 300" fill="none" stroke="#D7E8EA" stroke-width="20" stroke-linecap="round"/>
+        <line x1="316" y1="304" x2="362" y2="250" stroke="#F08A3C" stroke-width="5" stroke-linecap="round"/>
+        <circle cx="364" cy="248" r="6" fill="#F5C04A"/>
+        <circle cx="316" cy="304" r="15" fill="#FFFFFF" stroke="#C9DFE3" stroke-width="3"/>
+        <rect x="184" y="206" width="32" height="20" rx="6" fill="#9FBEC2"/>
+        <path d="M132 224 Q200 252 268 224 L270 248 Q200 276 130 248 Z" fill="#6B3FA0"/>
+        <polyline points="138,238 150,230 162,244 174,234 186,248 200,238 214,248 226,234 238,244 250,230 262,238" fill="none" stroke="#F5C04A" stroke-width="3.5" stroke-linejoin="round"/>
+        <path d="M236 252 L258 312 L238 316 L222 258 Z" fill="#6B3FA0"/>
+        <line x1="232" y1="270" x2="250" y2="266" stroke="#2FA8A6" stroke-width="4"/>
+        <line x1="238" y1="288" x2="254" y2="284" stroke="#F5C04A" stroke-width="4"/>
+        <circle cx="107" cy="140" r="13" fill="#2FA8A6"/>
+        <circle cx="293" cy="140" r="13" fill="#2FA8A6"/>
+        <rect x="110" y="70" width="180" height="140" rx="48" fill="url(#bbuz)"/>
+        <rect x="130" y="92" width="140" height="96" rx="32" fill="#0F1E2A"/>
+        <ellipse cx="172" cy="134" rx="14" ry="18" fill="#5EE6DF"/>
+        <path d="M214 136 Q228 126 242 136" fill="none" stroke="#5EE6DF" stroke-width="6" stroke-linecap="round"/>
+        <circle cx="177" cy="127" r="4.5" fill="#FFFFFF"/>
+        <ellipse cx="150" cy="164" rx="9" ry="4.5" fill="#FF8FB1" opacity=".7"/>
+        <ellipse cx="250" cy="164" rx="9" ry="4.5" fill="#FF8FB1" opacity=".7"/>
+        <path d="M182 160 Q204 178 222 156" fill="none" stroke="#5EE6DF" stroke-width="5" stroke-linecap="round"/>
+      </svg>
+    </div>
+  </div>
+</div>
+
+<section id="uz-nima">
+  <div class="wrap">
+    <div class="eyebrow">Agent nima qiladi</div>
+    <h2>Direkt <span class="accent">o'zi ishlaydi</span></h2>
+    <p class="sub">Siz uxlayotganingizda ham, band bo'lsangiz ham mijoz javobsiz qolmaydi.</p>
+    <div class="cases">
+      <div class="case">
+        <span class="tag">Javoblar</span>
+        <h3>Savolga darhol javob</h3>
+        <div class="lbl">Oldin</div>
+        <p class="was">Har bir "narxi qancha?" ga o'zingiz javob berasiz, kechasi xabarlar kutib qoladi</p>
+        <div class="lbl">Endi</div>
+        <p class="now">Agent <b>bir necha soniyada</b>, mijoz yozgan tilda javob beradi</p>
+      </div>
+      <div class="case">
+        <span class="tag">Mijozlar</span>
+        <h3>Raqamni o'zi oladi</h3>
+        <div class="lbl">Oldin</div>
+        <p class="was">Qiziqqan mijoz javob kutmay ketib qoladi</p>
+        <div class="lbl">Endi</div>
+        <p class="now">Agent ismi va telefonini so'raydi va <b>Telegram'ingizga yuboradi</b></p>
+      </div>
+      <div class="case">
+        <span class="tag">Nazorat</span>
+        <h3>Murakkabini sizga uzatadi</h3>
+        <div class="lbl">Oldin</div>
+        <p class="was">Bot noto'g'ri javob berib qo'yishidan qo'rqasiz</p>
+        <div class="lbl">Endi</div>
+        <p class="now">Bilmagan savolni agent <b>sizga uzatadi</b>, o'zi to'qib chiqarmaydi</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="uz-dastur">
+  <div class="wrap">
+    <div class="eyebrow">Ichida nima bor</div>
+    <h2>Gayd + 4 ta <span class="accent">qisqa video</span></h2>
+    <p class="sub">Har qadam skrinshot va ekran videosi bilan. Oxirida agent sizning Direkt'ingizga javob berib turadi.</p>
+    <div class="guides">
+      <div class="g"><div class="n">01</div><h3>ChatPlace'ni ulash</h3><p>Instagram professional akkaunt, Facebook sahifa va ChatPlace — qadamma-qadam.</p></div>
+      <div class="g"><div class="n">02</div><h3>Claude bilan agentning "miyasi"</h3><p>Tayyor prompt: biznesingiz haqida yozasiz, Claude bilimlar bazasi va javob uslubini tayyorlaydi.</p></div>
+      <div class="g"><div class="n">03</div><h3>3 ta tayyor shablon</h3><p>Do'kon, xizmat ko'rsatish va ekspert uchun — faqat ma'lumotingizni almashtirasiz.</p></div>
+      <div class="g"><div class="n">04</div><h3>Sinov va ishga tushirish</h3><p>10 ta savollik chek-list: agent to'g'ri javob berayotganini tekshirib, yoqasiz.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="uz-ishlar">
+  <div class="wrap">
+    <div class="eyebrow">Real ish</div>
+    <h2>Shu usulda <span class="accent">yasalgan</span></h2>
+    <div class="cases">
+      <div class="case">
+        <span class="tag">Restoran · Hisobot</span>
+        <h3>Kassadan — Telegram'ga</h3>
+        <div class="lbl">Oldin</div>
+        <p class="was">Kunlik savdoni bilish uchun kassa dasturiga kirib, raqamlarni qo'lda yig'ish kerak edi</p>
+        <div class="lbl">Endi</div>
+        <p class="now">Claude yozgan bot kassa tizimidan ma'lumot olib, egasiga <b>Telegram'da hisobot</b> yuboradi</p>
+      </div>
+      <div class="case">
+        <span class="tag">Kontent · Maskot</span>
+        <h3>Bit — yuzsiz boshlovchi</h3>
+        <div class="lbl">Oldin</div>
+        <p class="was">Kamera oldida chiqish shart, deb o'ylanardi</p>
+        <div class="lbl">Endi</div>
+        <p class="now">Personaj, sayt va bu kursning sotuv voronkasi <b>Claude bilan</b> yasaldi</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="eyebrow">Qanday sotib olinadi</div>
+    <h2>4 qadam — <span class="accent">va boshladingiz</span></h2>
+    <div class="steps">
+      <div class="step"><b>Tugmani bosing</b><p>Telegram bot ochiladi.</p></div>
+      <div class="step"><b>To'lang</b><p>Bot karta raqamini beradi, istalgan ilovadan $15 ga teng summani o'tkazasiz.</p></div>
+      <div class="step"><b>Chekni yuboring</b><p>To'lov chekini botga tashlaysiz.</p></div>
+      <div class="step"><b>Boshlang</b><p>Tasdiqlangach, gayd va videolar botda ochiladi.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="uz-savollar">
+  <div class="wrap">
+    <div class="eyebrow">Savollar</div>
+    <h2>Ko'p <span class="accent">so'raladi</span></h2>
+    <div class="faq">
+      <details><summary>Dasturlashni umuman bilmayman. Uddalaymanmi?</summary><p>Ha. Kod yozilmaydi: ChatPlace'da tugmalarni bosasiz, Claude'ga esa tayyor promptni berasiz. Har qadam videoda ko'rsatilgan.</p></details>
+      <details><summary>Qanday kompyuter va dasturlar kerak?</summary><p>Telefon yoki kompyuter, Facebook sahifaga ulangan Instagram professional akkaunti, ChatPlace (bepul tarifi bor, kengaytirilgan imkoniyatlar pullik) va Claude (prompt uchun bepul versiyasi ham yetadi).</p></details>
+      <details><summary>Agent qaysi biznesga mos?</summary><p>Direkt orqali savol keladigan har qanday biznes: do'kon, kafe, salon, o'quv markazi, xizmat ko'rsatish, blog.</p></details>
+      <details><summary>To'lovdan keyin qachon ochiladi?</summary><p>Chekni yuborganingizdan keyin, tasdiqlanishi bilan gayd va videolar botda ochiladi.</p></details>
+      <details><summary>Savollarim bo'lsa, kimga yozaman?</summary><p>Telegram: @khadi_7577.</p></details>
+    </div>
+  </div>
+</section>
+
+<section id="uz-maxfiylik">
+  <div class="wrap" style="max-width:820px">
+    <div class="eyebrow">Maxfiylik siyosati</div>
+    <h2 style="font-size:clamp(24px,3.6vw,34px)">Ma'lumotlaringiz <span class="accent">haqida</span></h2>
+    <p style="color:var(--muted)">Sayt hech qanday shaxsiy ma'lumot so'ramaydi. Xarid Telegram bot orqali bo'ladi: bot faqat Telegram ismingiz, foydalanuvchi nomingiz va siz yuborgan to'lov chekini ko'radi. Bu ma'lumotlar faqat to'lovni tasdiqlash va darslarni yuborish uchun ishlatiladi va uchinchi shaxslarga berilmaydi. Sayt reklama samaradorligini o'lchash uchun Meta (Facebook) pikselidan foydalanadi. Ma'lumotlaringizni o'chirish uchun Telegram orqali yozing: @khadi_7577.</p>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>© AI SMM Akademiya · Tasavvur AI</span>
+    <span><a href="#maxfiylik">Maxfiylik siyosati</a></span>
+    <span>Aloqa: Telegram <a href="https://t.me/khadi_7577">@khadi_7577</a></span>
+  </div>
+</footer>
+
+<div class="bar" role="region" aria-label="Tezkor xarid">
+  <div class="wrap">
+    <div><b>Direkt agenti — $15</b><span>gayd + 4 video · darhol</span></div>
+    <a class="btn" href="https://t.me/aismm_akademiya_bot?start=agent15" data-plan="agent15">Sotib olish</a>
+  </div>
+</div>
+
+
+</div>
+<div class="lang" data-lang="ru" lang="ru" hidden>
+<header>
+  <div class="wrap">
+    <a class="logo" href="#top"><i></i>AI SMM <span class="accent">Academy</span></a>
+    <nav class="nav" aria-label="Разделы">
+      <a href="#nima">Что делает агент</a>
+      <a href="#dastur">Программа</a>
+      <a href="#ishlar">Кейсы</a>
+      <a href="#savollar">Вопросы</a>
+    </nav>
+    <div class="langs" role="group" aria-label="Til / Язык / Language"><a href="#uz" aria-current="false">UZ</a><a href="#ru" aria-current="true">RU</a><a href="#en" aria-current="false">EN</a></div>
+  </div>
+</header>
+
+<main id="ru-top">
+<div class="hero">
+  <div class="wrap hero-grid">
+    <div>
+      <div class="eyebrow">Гайд + 4 видео · ChatPlace + Claude</div>
+      <h1>Агент, который <span class="accent">сам отвечает</span> в директ</h1>
+      <p class="lead">Запустите AI-агента, который круглосуточно отвечает в Instagram Direct, за 1 час. «Мозг» агента пишет Claude, а ChatPlace подключает его к Instagram.</p>
+      <ul class="checks">
+        <li><svg width="26" height="26" viewBox="0 0 26 26" aria-hidden="true"><circle cx="13" cy="13" r="13" fill="#F08A3C"/><path d="M7.5 13.5l3.5 3.5 7.5-8" fill="none" stroke="#1A0F06" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg>За 1 час — рабочий агент для директа</li>
+        <li><svg width="26" height="26" viewBox="0 0 26 26" aria-hidden="true"><circle cx="13" cy="13" r="13" fill="#F08A3C"/><path d="M7.5 13.5l3.5 3.5 7.5-8" fill="none" stroke="#1A0F06" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg>Программировать не нужно — готовый промпт и шаблоны</li>
+        <li><svg width="26" height="26" viewBox="0 0 26 26" aria-hidden="true"><circle cx="13" cy="13" r="13" fill="#F08A3C"/><path d="M7.5 13.5l3.5 3.5 7.5-8" fill="none" stroke="#1A0F06" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg>После оплаты гайд и видео открываются в Telegram-боте</li>
+      </ul>
+      <div class="price"><b>$15</b><span>разовая оплата</span></div>
+      <a class="btn" href="https://t.me/aismm_akademiya_bot?start=agent15_ru" data-plan="agent15">Создать агента — $15 <span class="arr" aria-hidden="true"><svg width="18" height="18" viewBox="0 0 18 18"><path d="M3 9h11M10 4l5 5-5 5" fill="none" stroke="#1A0F06" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg></span></a>
+    </div>
+    <div class="bitbox">
+      <div class="bubble">Привет! Я <b class="cyan">Бит</b> — как раз такой агент. Сделаем вам такого же?</div>
+      <svg viewBox="40 10 340 420" role="img" aria-label="Bit — atlas sharfli uchar robot, akademiya boshlovchisi">
+        <defs>
+          <linearGradient id="bbru" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#FFFFFF"/><stop offset="1" stop-color="#C9DFE3"/></linearGradient>
+          <radialGradient id="btru" cx="50%" cy="30%" r="60%"><stop offset="0" stop-color="#5EE6DF" stop-opacity=".85"/><stop offset="1" stop-color="#5EE6DF" stop-opacity="0"/></radialGradient>
+          <radialGradient id="boru" cx="50%" cy="50%" r="50%"><stop offset="0" stop-color="#F08A3C" stop-opacity=".7"/><stop offset="1" stop-color="#F08A3C" stop-opacity="0"/></radialGradient>
+        </defs>
+        <ellipse cx="200" cy="404" rx="86" ry="34" fill="url(#btru)"/>
+        <path d="M184 372 Q200 424 216 372 Z" fill="#5EE6DF" opacity=".85"/>
+        <ellipse cx="200" cy="368" rx="36" ry="11" fill="#2FA8A6"/>
+        <circle cx="200" cy="34" r="24" fill="url(#boru)"/>
+        <line x1="200" y1="72" x2="200" y2="40" stroke="#8FB3B8" stroke-width="6" stroke-linecap="round"/>
+        <circle cx="200" cy="34" r="10" fill="#F08A3C"/>
+        <path d="M134 252 C110 230 92 206 82 184" fill="none" stroke="#D7E8EA" stroke-width="22" stroke-linecap="round"/>
+        <circle cx="80" cy="174" r="17" fill="#FFFFFF" stroke="#C9DFE3" stroke-width="3"/>
+        <rect x="130" y="222" width="140" height="132" rx="52" fill="url(#bbru)"/>
+        <circle cx="200" cy="294" r="22" fill="#0F1E2A"/>
+        <path d="M203 280 L192 298 L201 298 L197 310 L209 291 L200 291 Z" fill="#5EE6DF"/>
+        <path d="M266 258 C286 274 302 290 312 300" fill="none" stroke="#D7E8EA" stroke-width="20" stroke-linecap="round"/>
+        <line x1="316" y1="304" x2="362" y2="250" stroke="#F08A3C" stroke-width="5" stroke-linecap="round"/>
+        <circle cx="364" cy="248" r="6" fill="#F5C04A"/>
+        <circle cx="316" cy="304" r="15" fill="#FFFFFF" stroke="#C9DFE3" stroke-width="3"/>
+        <rect x="184" y="206" width="32" height="20" rx="6" fill="#9FBEC2"/>
+        <path d="M132 224 Q200 252 268 224 L270 248 Q200 276 130 248 Z" fill="#6B3FA0"/>
+        <polyline points="138,238 150,230 162,244 174,234 186,248 200,238 214,248 226,234 238,244 250,230 262,238" fill="none" stroke="#F5C04A" stroke-width="3.5" stroke-linejoin="round"/>
+        <path d="M236 252 L258 312 L238 316 L222 258 Z" fill="#6B3FA0"/>
+        <line x1="232" y1="270" x2="250" y2="266" stroke="#2FA8A6" stroke-width="4"/>
+        <line x1="238" y1="288" x2="254" y2="284" stroke="#F5C04A" stroke-width="4"/>
+        <circle cx="107" cy="140" r="13" fill="#2FA8A6"/>
+        <circle cx="293" cy="140" r="13" fill="#2FA8A6"/>
+        <rect x="110" y="70" width="180" height="140" rx="48" fill="url(#bbru)"/>
+        <rect x="130" y="92" width="140" height="96" rx="32" fill="#0F1E2A"/>
+        <ellipse cx="172" cy="134" rx="14" ry="18" fill="#5EE6DF"/>
+        <path d="M214 136 Q228 126 242 136" fill="none" stroke="#5EE6DF" stroke-width="6" stroke-linecap="round"/>
+        <circle cx="177" cy="127" r="4.5" fill="#FFFFFF"/>
+        <ellipse cx="150" cy="164" rx="9" ry="4.5" fill="#FF8FB1" opacity=".7"/>
+        <ellipse cx="250" cy="164" rx="9" ry="4.5" fill="#FF8FB1" opacity=".7"/>
+        <path d="M182 160 Q204 178 222 156" fill="none" stroke="#5EE6DF" stroke-width="5" stroke-linecap="round"/>
+      </svg>
+    </div>
+  </div>
+</div>
+
+<section id="ru-nima">
+  <div class="wrap">
+    <div class="eyebrow">Что делает агент</div>
+    <h2>Директ <span class="accent">работает сам</span></h2>
+    <p class="sub">Клиент не останется без ответа, даже когда вы спите или заняты.</p>
+    <div class="cases">
+      <div class="case">
+        <span class="tag">Ответы</span>
+        <h3>Отвечает сразу</h3>
+        <div class="lbl">Было</div>
+        <p class="was">На каждое «сколько стоит?» отвечаете сами, ночью сообщения ждут до утра</p>
+        <div class="lbl">Стало</div>
+        <p class="now">Агент отвечает <b>за секунды</b> на языке клиента</p>
+      </div>
+      <div class="case">
+        <span class="tag">Клиенты</span>
+        <h3>Сам берёт номер</h3>
+        <div class="lbl">Было</div>
+        <p class="was">Заинтересованный клиент уходит, не дождавшись ответа</p>
+        <div class="lbl">Стало</div>
+        <p class="now">Агент спрашивает имя и телефон и <b>присылает их вам в Telegram</b></p>
+      </div>
+      <div class="case">
+        <span class="tag">Контроль</span>
+        <h3>Сложное — вам</h3>
+        <div class="lbl">Было</div>
+        <p class="was">Страшно, что бот ответит что-то не то</p>
+        <div class="lbl">Стало</div>
+        <p class="now">Вопрос, которого агент не знает, он <b>передаёт вам</b>, а не выдумывает</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="ru-dastur">
+  <div class="wrap">
+    <div class="eyebrow">Что внутри</div>
+    <h2>Гайд + 4 <span class="accent">коротких видео</span></h2>
+    <p class="sub">Каждый шаг со скриншотами и записью экрана. В конце агент уже отвечает в вашем директе.</p>
+    <div class="guides">
+      <div class="g"><div class="n">01</div><h3>Подключаем ChatPlace</h3><p>Профессиональный аккаунт Instagram, страница Facebook и ChatPlace — пошагово.</p></div>
+      <div class="g"><div class="n">02</div><h3>«Мозг» агента с Claude</h3><p>Готовый промпт: вы пишете о своём бизнесе, Claude готовит базу знаний и стиль ответов.</p></div>
+      <div class="g"><div class="n">03</div><h3>3 готовых шаблона</h3><p>Для магазина, сферы услуг и эксперта — меняете только свои данные.</p></div>
+      <div class="g"><div class="n">04</div><h3>Тест и запуск</h3><p>Чек-лист из 10 вопросов: проверяете ответы агента и включаете.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="ru-ishlar">
+  <div class="wrap">
+    <div class="eyebrow">Реальный кейс</div>
+    <h2>Сделано <span class="accent">этим способом</span></h2>
+    <div class="cases">
+      <div class="case">
+        <span class="tag">Ресторан · Отчёты</span>
+        <h3>Из кассы — в Telegram</h3>
+        <div class="lbl">Было</div>
+        <p class="was">Чтобы узнать дневную выручку, нужно было заходить в кассовую программу и собирать цифры вручную</p>
+        <div class="lbl">Стало</div>
+        <p class="now">Бот, написанный Claude, берёт данные из кассы и присылает владельцу <b>отчёт в Telegram</b></p>
+      </div>
+      <div class="case">
+        <span class="tag">Контент · Маскот</span>
+        <h3>Бит — ведущий без лица</h3>
+        <div class="lbl">Было</div>
+        <p class="was">Казалось, что без съёмки себя на камеру не обойтись</p>
+        <div class="lbl">Стало</div>
+        <p class="now">Персонаж, сайт и воронка этого курса сделаны <b>вместе с Claude</b></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="eyebrow">Как купить</div>
+    <h2>4 шага — <span class="accent">и вы начали</span></h2>
+    <div class="steps">
+      <div class="step"><b>Нажмите кнопку</b><p>Откроется Telegram-бот.</p></div>
+      <div class="step"><b>Оплатите</b><p>Бот пришлёт реквизиты для оплаты $15.</p></div>
+      <div class="step"><b>Отправьте чек</b><p>Пришлите боту чек об оплате.</p></div>
+      <div class="step"><b>Начинайте</b><p>После подтверждения гайд и видео откроются в боте.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="ru-savollar">
+  <div class="wrap">
+    <div class="eyebrow">Вопросы</div>
+    <h2>Часто <span class="accent">спрашивают</span></h2>
+    <div class="faq">
+      <details><summary>Я совсем не умею программировать. Справлюсь?</summary><p>Да. Код писать не нужно: в ChatPlace вы нажимаете кнопки, а Claude даёте готовый промпт. Каждый шаг показан на видео.</p></details>
+      <details><summary>Какой нужен компьютер и программы?</summary><p>Телефон или компьютер, профессиональный аккаунт Instagram, привязанный к странице Facebook, ChatPlace (есть бесплатный тариф, расширенные функции платные) и Claude (для промпта хватит и бесплатной версии).</p></details>
+      <details><summary>Для какого бизнеса подойдёт агент?</summary><p>Для любого, кому пишут в директ: магазин, кафе, салон, учебный центр, услуги, блог.</p></details>
+      <details><summary>Когда откроется доступ после оплаты?</summary><p>Сразу после подтверждения оплаты гайд и видео откроются в боте.</p></details>
+      <details><summary>Куда писать, если есть вопросы?</summary><p>Telegram: @khadi_7577.</p></details>
+    </div>
+  </div>
+</section>
+
+<section id="ru-maxfiylik">
+  <div class="wrap" style="max-width:820px">
+    <div class="eyebrow">Политика конфиденциальности</div>
+    <h2 class="h2s">О ваших <span class="accent">данных</span></h2>
+    <p style="color:var(--muted)">Сайт не запрашивает личные данные. Покупка проходит через Telegram-бота: бот видит только ваше имя и username в Telegram и чек об оплате, который вы отправили. Эти данные используются только для подтверждения оплаты и выдачи уроков и не передаются третьим лицам. Для оценки эффективности рекламы сайт использует пиксель Meta (Facebook). Чтобы удалить свои данные, напишите в Telegram: @khadi_7577.</p>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>© AI SMM Academy · Tasavvur AI</span>
+    <span><a href="#maxfiylik">Политика конфиденциальности</a></span>
+    <span>Связь: Telegram <a href="https://t.me/khadi_7577">@khadi_7577</a></span>
+  </div>
+</footer>
+
+<div class="bar" role="region" aria-label="Быстрая покупка">
+  <div class="wrap">
+    <div><b>Агент для директа — $15</b><span>гайд + 4 видео · сразу</span></div>
+    <a class="btn" href="https://t.me/aismm_akademiya_bot?start=agent15_ru" data-plan="agent15">Купить</a>
+  </div>
+</div>
+
+</div>
+<div class="lang" data-lang="en" lang="en" hidden>
+<header>
+  <div class="wrap">
+    <a class="logo" href="#top"><i></i>AI SMM <span class="accent">Academy</span></a>
+    <nav class="nav" aria-label="Sections">
+      <a href="#nima">What the agent does</a>
+      <a href="#dastur">Program</a>
+      <a href="#ishlar">Case</a>
+      <a href="#savollar">FAQ</a>
+    </nav>
+    <div class="langs" role="group" aria-label="Til / Язык / Language"><a href="#uz" aria-current="false">UZ</a><a href="#ru" aria-current="false">RU</a><a href="#en" aria-current="true">EN</a></div>
+  </div>
+</header>
+
+<main id="en-top">
+<div class="hero">
+  <div class="wrap hero-grid">
+    <div>
+      <div class="eyebrow">Guide + 4 videos · ChatPlace + Claude</div>
+      <h1>An agent that <span class="accent">answers your DMs</span></h1>
+      <p class="lead">Launch an AI agent that answers Instagram DMs around the clock — in 1 hour. Claude writes the agent's "brain", and ChatPlace connects it to Instagram.</p>
+      <ul class="checks">
+        <li><svg width="26" height="26" viewBox="0 0 26 26" aria-hidden="true"><circle cx="13" cy="13" r="13" fill="#F08A3C"/><path d="M7.5 13.5l3.5 3.5 7.5-8" fill="none" stroke="#1A0F06" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg>A working DM agent in 1 hour</li>
+        <li><svg width="26" height="26" viewBox="0 0 26 26" aria-hidden="true"><circle cx="13" cy="13" r="13" fill="#F08A3C"/><path d="M7.5 13.5l3.5 3.5 7.5-8" fill="none" stroke="#1A0F06" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg>No coding — a ready prompt and templates</li>
+        <li><svg width="26" height="26" viewBox="0 0 26 26" aria-hidden="true"><circle cx="13" cy="13" r="13" fill="#F08A3C"/><path d="M7.5 13.5l3.5 3.5 7.5-8" fill="none" stroke="#1A0F06" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg>The guide and videos unlock in a Telegram bot right after payment</li>
+      </ul>
+      <div class="price"><b>$15</b><span>one-time payment</span></div>
+      <a class="btn" href="https://t.me/aismm_akademiya_bot?start=agent15_en" data-plan="agent15">Build my agent — $15 <span class="arr" aria-hidden="true"><svg width="18" height="18" viewBox="0 0 18 18"><path d="M3 9h11M10 4l5 5-5 5" fill="none" stroke="#1A0F06" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg></span></a>
+    </div>
+    <div class="bitbox">
+      <div class="bubble">Hi! I'm <b class="cyan">Bit</b> — exactly this kind of agent. Shall we build one for you?</div>
+      <svg viewBox="40 10 340 420" role="img" aria-label="Bit — atlas sharfli uchar robot, akademiya boshlovchisi">
+        <defs>
+          <linearGradient id="bben" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#FFFFFF"/><stop offset="1" stop-color="#C9DFE3"/></linearGradient>
+          <radialGradient id="bten" cx="50%" cy="30%" r="60%"><stop offset="0" stop-color="#5EE6DF" stop-opacity=".85"/><stop offset="1" stop-color="#5EE6DF" stop-opacity="0"/></radialGradient>
+          <radialGradient id="boen" cx="50%" cy="50%" r="50%"><stop offset="0" stop-color="#F08A3C" stop-opacity=".7"/><stop offset="1" stop-color="#F08A3C" stop-opacity="0"/></radialGradient>
+        </defs>
+        <ellipse cx="200" cy="404" rx="86" ry="34" fill="url(#bten)"/>
+        <path d="M184 372 Q200 424 216 372 Z" fill="#5EE6DF" opacity=".85"/>
+        <ellipse cx="200" cy="368" rx="36" ry="11" fill="#2FA8A6"/>
+        <circle cx="200" cy="34" r="24" fill="url(#boen)"/>
+        <line x1="200" y1="72" x2="200" y2="40" stroke="#8FB3B8" stroke-width="6" stroke-linecap="round"/>
+        <circle cx="200" cy="34" r="10" fill="#F08A3C"/>
+        <path d="M134 252 C110 230 92 206 82 184" fill="none" stroke="#D7E8EA" stroke-width="22" stroke-linecap="round"/>
+        <circle cx="80" cy="174" r="17" fill="#FFFFFF" stroke="#C9DFE3" stroke-width="3"/>
+        <rect x="130" y="222" width="140" height="132" rx="52" fill="url(#bben)"/>
+        <circle cx="200" cy="294" r="22" fill="#0F1E2A"/>
+        <path d="M203 280 L192 298 L201 298 L197 310 L209 291 L200 291 Z" fill="#5EE6DF"/>
+        <path d="M266 258 C286 274 302 290 312 300" fill="none" stroke="#D7E8EA" stroke-width="20" stroke-linecap="round"/>
+        <line x1="316" y1="304" x2="362" y2="250" stroke="#F08A3C" stroke-width="5" stroke-linecap="round"/>
+        <circle cx="364" cy="248" r="6" fill="#F5C04A"/>
+        <circle cx="316" cy="304" r="15" fill="#FFFFFF" stroke="#C9DFE3" stroke-width="3"/>
+        <rect x="184" y="206" width="32" height="20" rx="6" fill="#9FBEC2"/>
+        <path d="M132 224 Q200 252 268 224 L270 248 Q200 276 130 248 Z" fill="#6B3FA0"/>
+        <polyline points="138,238 150,230 162,244 174,234 186,248 200,238 214,248 226,234 238,244 250,230 262,238" fill="none" stroke="#F5C04A" stroke-width="3.5" stroke-linejoin="round"/>
+        <path d="M236 252 L258 312 L238 316 L222 258 Z" fill="#6B3FA0"/>
+        <line x1="232" y1="270" x2="250" y2="266" stroke="#2FA8A6" stroke-width="4"/>
+        <line x1="238" y1="288" x2="254" y2="284" stroke="#F5C04A" stroke-width="4"/>
+        <circle cx="107" cy="140" r="13" fill="#2FA8A6"/>
+        <circle cx="293" cy="140" r="13" fill="#2FA8A6"/>
+        <rect x="110" y="70" width="180" height="140" rx="48" fill="url(#bben)"/>
+        <rect x="130" y="92" width="140" height="96" rx="32" fill="#0F1E2A"/>
+        <ellipse cx="172" cy="134" rx="14" ry="18" fill="#5EE6DF"/>
+        <path d="M214 136 Q228 126 242 136" fill="none" stroke="#5EE6DF" stroke-width="6" stroke-linecap="round"/>
+        <circle cx="177" cy="127" r="4.5" fill="#FFFFFF"/>
+        <ellipse cx="150" cy="164" rx="9" ry="4.5" fill="#FF8FB1" opacity=".7"/>
+        <ellipse cx="250" cy="164" rx="9" ry="4.5" fill="#FF8FB1" opacity=".7"/>
+        <path d="M182 160 Q204 178 222 156" fill="none" stroke="#5EE6DF" stroke-width="5" stroke-linecap="round"/>
+      </svg>
+    </div>
+  </div>
+</div>
+
+<section id="en-nima">
+  <div class="wrap">
+    <div class="eyebrow">What the agent does</div>
+    <h2>Your DMs <span class="accent">run themselves</span></h2>
+    <p class="sub">No customer goes unanswered, even while you sleep or you're busy.</p>
+    <div class="cases">
+      <div class="case">
+        <span class="tag">Replies</span>
+        <h3>Answers instantly</h3>
+        <div class="lbl">Before</div>
+        <p class="was">You answer every "how much?" yourself, and night messages wait till morning</p>
+        <div class="lbl">After</div>
+        <p class="now">The agent replies <b>in seconds</b>, in the customer's language</p>
+      </div>
+      <div class="case">
+        <span class="tag">Leads</span>
+        <h3>Collects the number</h3>
+        <div class="lbl">Before</div>
+        <p class="was">Interested customers leave before you reply</p>
+        <div class="lbl">After</div>
+        <p class="now">The agent asks for name and phone and <b>sends them to your Telegram</b></p>
+      </div>
+      <div class="case">
+        <span class="tag">Control</span>
+        <h3>Hands off the hard ones</h3>
+        <div class="lbl">Before</div>
+        <p class="was">You worry a bot will say something wrong</p>
+        <div class="lbl">After</div>
+        <p class="now">Questions it can't answer, the agent <b>passes to you</b> instead of making things up</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="en-dastur">
+  <div class="wrap">
+    <div class="eyebrow">What's inside</div>
+    <h2>A guide + 4 <span class="accent">short videos</span></h2>
+    <p class="sub">Every step with screenshots and screen recordings. By the end, the agent is answering your DMs.</p>
+    <div class="guides">
+      <div class="g"><div class="n">01</div><h3>Connect ChatPlace</h3><p>Instagram professional account, Facebook Page and ChatPlace — step by step.</p></div>
+      <div class="g"><div class="n">02</div><h3>The agent's brain with Claude</h3><p>A ready prompt: you describe your business, Claude writes the knowledge base and reply style.</p></div>
+      <div class="g"><div class="n">03</div><h3>3 ready templates</h3><p>For a shop, a service business and an expert — just swap in your details.</p></div>
+      <div class="g"><div class="n">04</div><h3>Test and launch</h3><p>A 10-question checklist to check the answers, then switch it on.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="en-ishlar">
+  <div class="wrap">
+    <div class="eyebrow">Real case</div>
+    <h2>Built <span class="accent">this way</span></h2>
+    <div class="cases">
+      <div class="case">
+        <span class="tag">Restaurant · Reports</span>
+        <h3>From the till to Telegram</h3>
+        <div class="lbl">Before</div>
+        <p class="was">To see daily sales, the owner had to open the POS system and collect numbers by hand</p>
+        <div class="lbl">After</div>
+        <p class="now">A bot written by Claude pulls POS data and sends the owner <b>a report in Telegram</b></p>
+      </div>
+      <div class="case">
+        <span class="tag">Content · Mascot</span>
+        <h3>Bit — a faceless host</h3>
+        <div class="lbl">Before</div>
+        <p class="was">It seemed you had to be on camera yourself</p>
+        <div class="lbl">After</div>
+        <p class="now">The character, the site and this course's sales funnel were built <b>with Claude</b></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="eyebrow">How to buy</div>
+    <h2>4 steps — <span class="accent">and you're in</span></h2>
+    <div class="steps">
+      <div class="step"><b>Tap the button</b><p>The Telegram bot opens.</p></div>
+      <div class="step"><b>Pay</b><p>The bot sends payment details for $15.</p></div>
+      <div class="step"><b>Send the receipt</b><p>Send your payment receipt to the bot.</p></div>
+      <div class="step"><b>Start</b><p>Once confirmed, the guide and videos unlock in the bot.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="en-savollar">
+  <div class="wrap">
+    <div class="eyebrow">FAQ</div>
+    <h2>Frequently <span class="accent">asked</span></h2>
+    <div class="faq">
+      <details><summary>I can't code at all. Can I do this?</summary><p>Yes. There's no code: you click through ChatPlace and give Claude a ready prompt. Every step is shown on video.</p></details>
+      <details><summary>What computer and software do I need?</summary><p>A phone or computer, an Instagram professional account linked to a Facebook Page, ChatPlace (free plan available, advanced features are paid) and Claude (the free version is enough for the prompt).</p></details>
+      <details><summary>What kind of business is it for?</summary><p>Any business that gets questions in DMs: shops, cafes, salons, schools, services, bloggers.</p></details>
+      <details><summary>When do I get access after paying?</summary><p>As soon as your payment is confirmed, the guide and videos unlock in the bot.</p></details>
+      <details><summary>Who do I contact with questions?</summary><p>Telegram: @khadi_7577.</p></details>
+    </div>
+  </div>
+</section>
+
+<section id="en-maxfiylik">
+  <div class="wrap" style="max-width:820px">
+    <div class="eyebrow">Privacy policy</div>
+    <h2 class="h2s">About your <span class="accent">data</span></h2>
+    <p style="color:var(--muted)">This site does not ask for personal data. Purchases go through a Telegram bot: the bot only sees your Telegram name, username and the payment receipt you send. This data is used only to confirm payment and deliver the lessons, and is never shared with third parties. The site uses the Meta (Facebook) pixel to measure ad performance. To delete your data, message us on Telegram: @khadi_7577.</p>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>© AI SMM Academy · Tasavvur AI</span>
+    <span><a href="#maxfiylik">Privacy policy</a></span>
+    <span>Contact: Telegram <a href="https://t.me/khadi_7577">@khadi_7577</a></span>
+  </div>
+</footer>
+
+<div class="bar" role="region" aria-label="Quick purchase">
+  <div class="wrap">
+    <div><b>DM agent — $15</b><span>guide + 4 videos · instant</span></div>
+    <a class="btn" href="https://t.me/aismm_akademiya_bot?start=agent15_en" data-plan="agent15">Buy now</a>
+  </div>
+</div>
+
+</div>
+<script>
+(function(){
+  var L=['uz','ru','en'],cur='uz';
+  function show(l){
+    if(L.indexOf(l)<0)l='uz';cur=l;
+    document.querySelectorAll('.lang').forEach(function(d){d.hidden=d.getAttribute('data-lang')!==l;});
+    document.documentElement.lang=l;
+  }
+  show((location.hash||'').slice(1));
+  window.addEventListener('hashchange',function(){var h=location.hash.slice(1);if(L.indexOf(h)>=0){show(h);window.scrollTo(0,0);}});
+  document.addEventListener('click',function(e){
+    var a=e.target.closest('a[href^="#"]');if(!a)return;
+    var id=a.getAttribute('href').slice(1);if(L.indexOf(id)>=0)return;
+    e.preventDefault();
+    var el=document.getElementById(cur+'-'+id);
+    if(id==='top'||!el){window.scrollTo({top:0,behavior:'smooth'});return;}
+    el.scrollIntoView({behavior:'smooth'});
+  });
+})();
+</script>
+<div class="bitchat" id="bitchat">
+  <div class="panel" id="bc-panel" hidden role="dialog" aria-label="Bit">
+    <div class="top"><span><i></i>Bit</span><button class="x" id="bc-close" aria-label="Yopish">×</button></div>
+    <div class="log" id="bc-log" aria-live="polite"></div>
+    <div class="opts" id="bc-opts"></div>
+  </div>
+  <button class="fab" id="bc-fab" aria-label="Bit"><svg viewBox="96 20 208 196" aria-hidden="true"><line x1="200" y1="72" x2="200" y2="40" stroke="#8FB3B8" stroke-width="6" stroke-linecap="round"/><circle cx="200" cy="34" r="10" fill="#F08A3C"/><circle cx="107" cy="140" r="13" fill="#2FA8A6"/><circle cx="293" cy="140" r="13" fill="#2FA8A6"/><rect x="110" y="70" width="180" height="140" rx="48" fill="#F4FAFB"/><rect x="130" y="92" width="140" height="96" rx="32" fill="#0F1E2A"/><ellipse cx="172" cy="134" rx="14" ry="18" fill="#5EE6DF"/><ellipse cx="228" cy="134" rx="14" ry="18" fill="#5EE6DF"/><circle cx="177" cy="127" r="4.5" fill="#FFF"/><circle cx="233" cy="127" r="4.5" fill="#FFF"/><path d="M182 160 Q200 176 218 160" fill="none" stroke="#5EE6DF" stroke-width="5" stroke-linecap="round"/></svg></button>
+</div>
+<script>
+(function(){
+var BOT='https://t.me/aismm_akademiya_bot?start=';
+var T={
+uz:{close:'Yopish',hi:["Salom! Men Bit.","Men Direkt'ga o'zi javob beradigan AI agentman. Sizga ham shunday agentni 1 soatda yasashni o'rgataman. Nima qiziq?"],
+ cta:"Agent yasash — $15",
+ q:{what:["Bu nima o'zi?","Instagram Direct'ingizga kechayu kunduz o'zim javob beraman: narx, manzil, yetkazib berish. Qiziqqan mijozning raqamini olib, sizga yuboraman. Siz uxlayotganingizda ham ishlayman."],
+    fit:["Menga mos keladimi?","Direkt'ga savol keladigan har qanday biznesga: do'kon, kafe, salon, o'quv markazi, xizmatlar, ekspert. Gaydda 3 ta tayyor shablon bor — faqat ma'lumotingizni yozasiz."],
+    code:["Dasturlashni bilmayman","Kerak emas! ChatPlace'da tugmalarni bosasiz, Claude'ga tayyor promptni berasiz — qolganini u yozadi. Har qadam videoda ko'rsatilgan."],
+    pay:["Qancha va qanday to'layman?","Bir marta $15. Tugmani bosasiz → Telegram bot ochiladi → to'lab, chekni yuborasiz → gayd va 4 ta video darhol ochiladi."]}},
+ru:{close:'Закрыть',hi:["Привет! Я Бит.","Я AI-агент, который сам отвечает в директ. Научу вас сделать такого же за 1 час. Что интересно?"],
+ cta:"Создать агента — $15",
+ q:{what:["Что это такое?","Я круглосуточно отвечаю в ваш Instagram Direct: цены, адрес, доставка. Беру номер у заинтересованного клиента и присылаю вам. Работаю, даже когда вы спите."],
+    fit:["Мне подойдёт?","Любому бизнесу, кому пишут в директ: магазин, кафе, салон, учебный центр, услуги, эксперт. В гайде 3 готовых шаблона — вы только вписываете свои данные."],
+    code:["Не умею программировать","И не нужно! В ChatPlace вы нажимаете кнопки, а Claude даёте готовый промпт — остальное он напишет сам. Каждый шаг показан на видео."],
+    pay:["Сколько стоит и как оплатить?","Один раз $15. Нажимаете кнопку → открывается Telegram-бот → оплачиваете и отправляете чек → гайд и 4 видео открываются сразу."]}},
+en:{close:'Close',hi:["Hi! I'm Bit.","I'm an AI agent that answers DMs by itself. I'll show you how to build one like me in 1 hour. What would you like to know?"],
+ cta:"Build my agent — $15",
+ q:{what:["What is this?","I answer your Instagram DMs around the clock: prices, address, delivery. I take interested customers' numbers and send them to you. I work even while you sleep."],
+    fit:["Will it work for me?","For any business that gets DMs: shops, cafes, salons, schools, services, experts. The guide has 3 ready templates — you just fill in your details."],
+    code:["I can't code","No need! You click through ChatPlace and give Claude a ready prompt — it writes the rest. Every step is shown on video."],
+    pay:["How much and how do I pay?","$15, once. Tap the button → the Telegram bot opens → pay and send the receipt → the guide and 4 videos unlock right away."]}}
+};
+var panel=document.getElementById('bc-panel'),log=document.getElementById('bc-log'),opts=document.getElementById('bc-opts');
+var asked={},started=false;
+function L(){var l=document.documentElement.lang;return T[l]?l:'uz';}
+function say(text,me){var d=document.createElement('div');d.className='m'+(me?' me':'');d.textContent=text;log.appendChild(d);log.scrollTop=log.scrollHeight;}
+function bitSays(lines,done){
+  var i=0;(function next(){if(i>=lines.length){if(done)done();return;}
+    var t=document.createElement('div');t.className='m typing';t.textContent='…';log.appendChild(t);log.scrollTop=log.scrollHeight;
+    setTimeout(function(){t.remove();say(lines[i++]);next();},Math.min(1400,500+lines[i].length*12));})();
+}
+function showOpts(){
+  var t=T[L()];opts.textContent='';
+  var a=document.createElement('a');a.href=BOT+'agent15_'+L()+'_bit';a.textContent=t.cta;opts.appendChild(a);
+  Object.keys(t.q).forEach(function(k){if(asked[k])return;var b=document.createElement('button');b.type='button';b.textContent=t.q[k][0];
+    b.onclick=function(){asked[k]=1;say(t.q[k][0],true);opts.textContent='';bitSays([t.q[k][1]],showOpts);};opts.appendChild(b);});
+}
+function openChat(){
+  panel.hidden=false;document.getElementById('bc-close').setAttribute('aria-label',T[L()].close);
+  if(!started){started=true;bitSays(T[L()].hi,showOpts);}
+}
+function reset(){started=false;asked={};log.textContent='';opts.textContent='';if(!panel.hidden)openChat();}
+document.getElementById('bc-fab').onclick=function(){if(panel.hidden)openChat();else panel.hidden=true;};
+document.getElementById('bc-close').onclick=function(){panel.hidden=true;try{sessionStorage.setItem('bc-closed','1');}catch(e){}};
+window.addEventListener('hashchange',reset);
+var closed=false;try{closed=sessionStorage.getItem('bc-closed')==='1';}catch(e){}
+if(!closed)setTimeout(openChat,4000);
+})();
+
+</script>
+</body>
+</html>
