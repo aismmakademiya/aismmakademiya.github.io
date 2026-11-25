@@ -55,6 +55,13 @@ header .wrap{display:flex;align-items:center;justify-content:space-between;heigh
 
 /* hero */
 .hero{position:relative;overflow:hidden;padding:56px 0 72px;background:radial-gradient(800px 500px at 85% 20%,rgba(142,91,214,.28),transparent 60%),radial-gradient(600px 400px at 0% 100%,rgba(240,138,60,.16),transparent 60%)}
+.dm{margin:18px 0 22px;background:#1c1627;border:1px solid #2e2540;border-radius:20px;padding:14px 14px 10px;max-width:340px;font-size:15px;text-align:left}
+.dm .h{display:flex;align-items:center;gap:8px;color:#b9afcb;font-size:12px;margin-bottom:8px;letter-spacing:.02em}
+.dm .h i{width:8px;height:8px;border-radius:50%;background:#50dc8c;display:inline-block}
+.dm .m{padding:9px 13px;border-radius:16px;margin:6px 0;max-width:86%;line-height:1.35;width:fit-content}
+.dm .in{background:#342c46;color:#f4effa;border-bottom-left-radius:5px}
+.dm .out{background:#6b3fa0;color:#fff;margin-left:auto;border-bottom-right-radius:5px}
+.dm .dmt{font-size:12px;color:#5ee6df;text-align:right;margin-top:4px;font-weight:600}
 .hero-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:40px;align-items:center}
 @media(max-width:860px){.hero-grid{grid-template-columns:1fr}}
 .hero h1{font-size:clamp(40px,7.4vw,84px);font-weight:800;margin:22px 0 22px;text-transform:uppercase}
@@ -180,8 +187,9 @@ footer .wrap{display:flex;flex-wrap:wrap;gap:12px 28px;justify-content:space-bet
 <div class="hero">
   <div class="wrap hero-grid">
     <div>
-      <div class="eyebrow">Gayd + 4 video · ChatPlace + Claude</div>
-      <h1>Direktga <span class="accent">o'zi javob</span> beradigan agent</h1>
+      <div class="eyebrow">Gayd + 5 video · ChatPlace + Claude</div>
+      <h1>Mijozlarga <span class="accent">soniyalarda javob</span> — siz uxlayotganingizda ham</h1>
+      <div class="dm"><div class="h"><i></i>Instagram Direct · namuna · 23:47</div><div class="m in">Assalomu alaykum, yetkazib berish qancha?</div><div class="m out">Assalomu alaykum! Toshkent bo'ylab — 20 000 so'm, bugun yetkazamiz. Buyurtma uchun raqamingizni qoldirasizmi? 😊</div><div class="dmt">⚡ Bit 3 soniyada javob berdi</div></div>
       <p class="lead">Instagram Direct'ga kechayu kunduz javob beradigan AI agentni 1 soatda ishga tushirasiz. Agentning "miyasini" Claude yozadi, ChatPlace esa uni Instagram'ga ulaydi.</p>
       <ul class="checks">
         <li><svg width="26" height="26" viewBox="0 0 26 26" aria-hidden="true"><circle cx="13" cy="13" r="13" fill="#F08A3C"/><path d="M7.5 13.5l3.5 3.5 7.5-8" fill="none" stroke="#1A0F06" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg>1 soatda — ishlaydigan Direkt agenti</li>
@@ -272,7 +280,7 @@ footer .wrap{display:flex;flex-wrap:wrap;gap:12px 28px;justify-content:space-bet
 <section id="uz-dastur">
   <div class="wrap">
     <div class="eyebrow">Ichida nima bor</div>
-    <h2>Gayd + 4 ta <span class="accent">qisqa video</span></h2>
+    <h2>Gayd + 5 ta <span class="accent">qisqa video</span></h2>
     <p class="sub">Har qadam skrinshot va ekran videosi bilan. Oxirida agent sizning Direkt'ingizga javob berib turadi.</p>
     <div class="guides">
       <div class="g"><div class="n">01</div><h3>ChatPlace'ni ulash</h3><p>Instagram professional akkaunt, Facebook sahifa va ChatPlace — qadamma-qadam.</p></div>
@@ -354,7 +362,7 @@ footer .wrap{display:flex;flex-wrap:wrap;gap:12px 28px;justify-content:space-bet
 
 <div class="bar" role="region" aria-label="Tezkor xarid">
   <div class="wrap">
-    <div><b>Direkt agenti — $5</b><span>gayd + 4 video · darhol</span></div>
+    <div><b>Direkt agenti — $5</b><span>gayd + 5 video · darhol</span></div>
     <a class="btn" href="https://t.me/aismm_akademiya_bot?start=agent" data-plan="agent">Sotib olish</a>
   </div>
 </div>
@@ -379,8 +387,9 @@ footer .wrap{display:flex;flex-wrap:wrap;gap:12px 28px;justify-content:space-bet
 <div class="hero">
   <div class="wrap hero-grid">
     <div>
-      <div class="eyebrow">Гайд + 4 видео · ChatPlace + Claude</div>
-      <h1>Агент, который <span class="accent">сам отвечает</span> в директ</h1>
+      <div class="eyebrow">Гайд + 5 видео · ChatPlace + Claude</div>
+      <h1>Клиентам — ответ <span class="accent">за секунды</span>, даже пока вы спите</h1>
+      <div class="dm"><div class="h"><i></i>Instagram Direct · пример · 23:47</div><div class="m in">Здравствуйте, сколько стоит доставка?</div><div class="m out">Здравствуйте! По Ташкенту — 20 000 сум, привезём сегодня. Оставите номер для заказа? 😊</div><div class="dmt">⚡ Бит ответил за 3 секунды</div></div>
       <p class="lead">Запустите AI-агента, который круглосуточно отвечает в Instagram Direct, за 1 час. «Мозг» агента пишет Claude, а ChatPlace подключает его к Instagram.</p>
       <ul class="checks">
         <li><svg width="26" height="26" viewBox="0 0 26 26" aria-hidden="true"><circle cx="13" cy="13" r="13" fill="#F08A3C"/><path d="M7.5 13.5l3.5 3.5 7.5-8" fill="none" stroke="#1A0F06" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg>За 1 час — рабочий агент для директа</li>
@@ -553,7 +562,7 @@ footer .wrap{display:flex;flex-wrap:wrap;gap:12px 28px;justify-content:space-bet
 
 <div class="bar" role="region" aria-label="Быстрая покупка">
   <div class="wrap">
-    <div><b>Агент для директа — $5</b><span>гайд + 4 видео · сразу</span></div>
+    <div><b>Агент для директа — $5</b><span>гайд + 5 видео · сразу</span></div>
     <a class="btn" href="https://t.me/aismm_akademiya_bot?start=agent_ru" data-plan="agent">Купить</a>
   </div>
 </div>
@@ -577,8 +586,9 @@ footer .wrap{display:flex;flex-wrap:wrap;gap:12px 28px;justify-content:space-bet
 <div class="hero">
   <div class="wrap hero-grid">
     <div>
-      <div class="eyebrow">Guide + 4 videos · ChatPlace + Claude</div>
-      <h1>An agent that <span class="accent">answers your DMs</span></h1>
+      <div class="eyebrow">Guide + 5 videos · ChatPlace + Claude</div>
+      <h1>Reply to customers <span class="accent">in seconds</span> — even while you sleep</h1>
+      <div class="dm"><div class="h"><i></i>Instagram Direct · example · 23:47</div><div class="m in">Hi, how much is delivery?</div><div class="m out">Hi! Delivery in Tashkent is 20,000 UZS, today. Can I take your number for the order? 😊</div><div class="dmt">⚡ Bit replied in 3 seconds</div></div>
       <p class="lead">Launch an AI agent that answers Instagram DMs around the clock — in 1 hour. Claude writes the agent's "brain", and ChatPlace connects it to Instagram.</p>
       <ul class="checks">
         <li><svg width="26" height="26" viewBox="0 0 26 26" aria-hidden="true"><circle cx="13" cy="13" r="13" fill="#F08A3C"/><path d="M7.5 13.5l3.5 3.5 7.5-8" fill="none" stroke="#1A0F06" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg>A working DM agent in 1 hour</li>
@@ -751,7 +761,7 @@ footer .wrap{display:flex;flex-wrap:wrap;gap:12px 28px;justify-content:space-bet
 
 <div class="bar" role="region" aria-label="Quick purchase">
   <div class="wrap">
-    <div><b>DM agent — $5</b><span>guide + 4 videos · instant</span></div>
+    <div><b>DM agent — $5</b><span>guide + 5 videos · instant</span></div>
     <a class="btn" href="https://t.me/aismm_akademiya_bot?start=agent_en" data-plan="agent">Buy now</a>
   </div>
 </div>
@@ -794,19 +804,19 @@ uz:{close:'Yopish',hi:["Salom! Men Bit.","Men Direkt'ga o'zi javob beradigan AI 
  q:{what:["Bu nima o'zi?","Instagram Direct'ingizga kechayu kunduz o'zim javob beraman: narx, manzil, yetkazib berish. Qiziqqan mijozning raqamini olib, sizga yuboraman. Siz uxlayotganingizda ham ishlayman."],
     fit:["Menga mos keladimi?","Direkt'ga savol keladigan har qanday biznesga: do'kon, kafe, salon, o'quv markazi, xizmatlar, ekspert. Gaydda 3 ta tayyor shablon bor — faqat ma'lumotingizni yozasiz."],
     code:["Dasturlashni bilmayman","Kerak emas! ChatPlace'da tugmalarni bosasiz, Claude'ga tayyor promptni berasiz — qolganini u yozadi. Har qadam videoda ko'rsatilgan."],
-    pay:["Qancha va qanday to'layman?","Bir marta $5. Tugmani bosasiz → Telegram bot ochiladi → to'lab, chekni yuborasiz → gayd va 4 ta video darhol ochiladi."]}},
+    pay:["Qancha va qanday to'layman?","Bir marta $5. Tugmani bosasiz → Telegram bot ochiladi → to'lab, chekni yuborasiz → gayd va 5 ta video darhol ochiladi."]}},
 ru:{close:'Закрыть',hi:["Привет! Я Бит.","Я AI-агент, который сам отвечает в директ. Научу вас сделать такого же за 1 час. Что интересно?"],
  cta:"Создать агента — $5",
  q:{what:["Что это такое?","Я круглосуточно отвечаю в ваш Instagram Direct: цены, адрес, доставка. Беру номер у заинтересованного клиента и присылаю вам. Работаю, даже когда вы спите."],
     fit:["Мне подойдёт?","Любому бизнесу, кому пишут в директ: магазин, кафе, салон, учебный центр, услуги, эксперт. В гайде 3 готовых шаблона — вы только вписываете свои данные."],
     code:["Не умею программировать","И не нужно! В ChatPlace вы нажимаете кнопки, а Claude даёте готовый промпт — остальное он напишет сам. Каждый шаг показан на видео."],
-    pay:["Сколько стоит и как оплатить?","Один раз $5. Нажимаете кнопку → открывается Telegram-бот → оплачиваете и отправляете чек → гайд и 4 видео открываются сразу."]}},
+    pay:["Сколько стоит и как оплатить?","Один раз $5. Нажимаете кнопку → открывается Telegram-бот → оплачиваете и отправляете чек → гайд и 5 видео открываются сразу."]}},
 en:{close:'Close',hi:["Hi! I'm Bit.","I'm an AI agent that answers DMs by itself. I'll show you how to build one like me in 1 hour. What would you like to know?"],
  cta:"Build my agent — $5",
  q:{what:["What is this?","I answer your Instagram DMs around the clock: prices, address, delivery. I take interested customers' numbers and send them to you. I work even while you sleep."],
     fit:["Will it work for me?","For any business that gets DMs: shops, cafes, salons, schools, services, experts. The guide has 3 ready templates — you just fill in your details."],
     code:["I can't code","No need! You click through ChatPlace and give Claude a ready prompt — it writes the rest. Every step is shown on video."],
-    pay:["How much and how do I pay?","$5, once. Tap the button → the Telegram bot opens → pay and send the receipt → the guide and 4 videos unlock right away."]}}
+    pay:["How much and how do I pay?","$5, once. Tap the button → the Telegram bot opens → pay and send the receipt → the guide and 5 videos unlock right away."]}}
 };
 var panel=document.getElementById('bc-panel'),log=document.getElementById('bc-log'),opts=document.getElementById('bc-opts');
 var asked={},started=false;
